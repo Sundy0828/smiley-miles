@@ -1,0 +1,15 @@
+{
+  "title": {
+    "long": "Miles of Smiles Timing Services",
+    "short": "Miles of Smiles",
+    "abbr": "MSTS"
+  },
+  "navbar": {
+    "about": "About Us",
+    "calendar": "Calendar",
+    "notes": "Notes",
+    "results": "Results",
+    "sale": "Sale",
+    "videos": "Videos"
+  }
+}

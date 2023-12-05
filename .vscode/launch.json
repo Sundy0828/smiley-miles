@@ -1,0 +1,56 @@
+{
+  "configurations": [
+    {
+      "name": "Debug Antioch App",
+      "type": "python",
+      "request": "launch",
+      "module": "behave",
+      "justMyCode": false,
+      "env": {
+        "BASE_URL": "https://${input:pickBranch}--latest.thorhudl.com",
+        "BASE_APP_URL": "https://${input:pickBranch}--latest.app.thorhudl.com"
+      },
+      "stopOnEntry": false,
+      "cwd": "${workspaceRoot}/apps/${input:pickApp}/antioch",
+      "args": ["features/", "-t ${input:pickTag}", "-k", "-D local=true"]
+    },
+    {
+      "type": "node",
+      "name": "vscode-jest-tests.v2",
+      "request": "launch",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/jest",
+      "args": [
+        "--runInBand",
+        "--watchAll=false",
+        "--testNamePattern",
+        "${jest.testNamePattern}",
+        "--runTestsByPath",
+        "${jest.testFile}"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "description": "Choose the App you want to debug",
+      "id": "pickApp",
+      "type": "pickString",
+      "options": ["watch", "fan", "showcase"]
+    },
+    {
+      "description": "Choose Branch",
+      "id": "pickBranch",
+      "type": "promptString",
+      "default": "main"
+    },
+    {
+      "description": "Choose behave test's tag",
+      "id": "pickTag",
+      "type": "promptString",
+      "default": "wip"
+    }
+  ]
+}

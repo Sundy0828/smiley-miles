@@ -1,0 +1,65 @@
+{
+  "[javascript][javascriptreact][json][jsonc][typescript][typescriptreact][yaml][html][markdown][mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "postcss.validate": false,
+  "[mdx]": {
+    "editor.wordWrap": "on"
+  },
+  "files.associations": {
+    ".terraformignore": "ignore",
+    "*.mdx": "markdown",
+    "turbo.json": "jsonc"
+  },
+  "cSpell.language": "en",
+  "cSpell.words": [
+    "autodocs",
+    "backdoored",
+    "camelcase",
+    "endregion",
+    "frontends",
+    "hudl",
+    "hudltools",
+    "Instat",
+    "Jamstack",
+    "playables",
+    "playhead",
+    "Solvvy",
+    "Sportscode",
+    "thorhudl",
+    "timespan",
+    "Turborepo",
+    "unoptimized"
+  ],
+  "cSpell.ignorePaths": [
+    "package-lock.json",
+    "node_modules",
+    "vscode-extension",
+    ".git/objects",
+    ".vscode",
+    ".vscode-insiders",
+    "package.json",
+    "CODEOWNERS",
+    "turbo.json"
+  ],
+  "search.exclude": {
+    "**/build": true,
+    "**/dist": true,
+    "**/.next": true,
+    "pnpm-lock.yaml": true,
+    "tmp": true,
+    "node_modules": true
+  },
+  "jest.autoRun": "off",
+  "jest.showTerminalOnLaunch": true,
+  "jestrunner.jestCommand": "pnpm jest",
+  "jest.jestCommandLine": "pnpm jest",
+  "workbench.colorCustomizations": {
+    "[Aylin]": {}
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
